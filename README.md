@@ -1,6 +1,7 @@
 # Autonomous Enterprise HR Recruitment Multi-Agent System
 
 **SDAIA Academy — Advanced Agentic AI Systems Capstone Project**
+This project done under supervision of SDAIA Academy https://github.com/SDAIAAcademy
 
 ---
 
@@ -209,9 +210,4 @@ Running the project automatically executes and logs 4 comprehensive test cases:
 - **Fairness & Bias Auditing Agent:** Add a dedicated evaluation agent that audits candidate rankings for demographic neutrality and blind-screening compliance.
 - **Interactive Web Dashboard:** Build a Streamlit or FastAPI + React UI so HR recruiters can upload job descriptions, review candidate cards, and click "Approve/Reject" in real time.
 
----
 
-## 10. Submission Details
-
-- **SDAIA Academy GitHub Repository Link:** `https://github.com/<your-username>/autonomous-hr-recruitment-agent`
-- **Google Form Submission:** Submitted via the official SDAIA Academy Capstone Submission Google Form.
