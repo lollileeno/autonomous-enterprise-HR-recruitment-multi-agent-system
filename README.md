@@ -5,7 +5,7 @@
 
 This project done under supervision of SDAIA Academy https://github.com/SDAIAAcademy
 ## Contributors
-Leena Alonayq - Rawan Almutairi - Norah Alyousef
+Leena Alonayq - Rawan Almutairi - Norah Al-Rumaykhani
 
 ---
 
@@ -23,17 +23,15 @@ Traditional rule-based scripts or single-prompt LLM chatbots cannot dynamically 
 - **Compliance & Security Auditors:** Inspect complete timestamped execution logs, PII-masked candidate records, Role-Based Access Control (RBAC) enforcement, and per-agent latency metrics.
 
 ---
-
-## 2. Project Structure
-
-```text
-autonomous-hr-recruitment-agent/
+# 2. Project Structure
+#autonomous-hr-recruitment-agent/
 │
 ├── recruitment_multi_agent.ipynb   # Main Google Colab notebook containing all 9 agents, LangGraph workflow & test suite
 ├── recruitment_multi_agent.py      # Standalone Python script version for local/server execution
 ├── requirements.txt                # Required Python libraries and dependencies
+├── .env.example                    # Template for required environment variables (GROQ_API_KEY, TAVILY_API_KEY)
+├── .gitignore                      # Specifies intentionally untracked files (e.g., .env, local vector DB, cache)
 └── README.md                       # Project documentation, architecture, workflow & setup instructions
-```
 
 ---
 
