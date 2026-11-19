@@ -5,7 +5,9 @@
 
 This project done under supervision of SDAIA Academy https://github.com/SDAIAAcademy
 ## Contributors
-Leena Alonayq - Rawan Almutairi - Norah Al-Rumaykhani
+- Leena Alonayq https://github.com/lollileeno
+- Rawan Almutairi https://github.com/Rawan-Almitairi
+- Norah Al-Rumaykhani https://github.com/Norahalyousef-ctrl
 
 ---
 
