@@ -24,7 +24,9 @@ Traditional rule-based scripts or single-prompt LLM chatbots cannot dynamically 
 
 ---
 # 2. Project Structure
-#autonomous-hr-recruitment-agent/
+
+```text
+autonomous-hr-recruitment-agent/
 │
 ├── recruitment_multi_agent.ipynb   # Main Google Colab notebook containing all 9 agents, LangGraph workflow & test suite
 ├── recruitment_multi_agent.py      # Standalone Python script version for local/server execution
@@ -32,7 +34,7 @@ Traditional rule-based scripts or single-prompt LLM chatbots cannot dynamically 
 ├── .env.example                    # Template for required environment variables (GROQ_API_KEY, TAVILY_API_KEY)
 ├── .gitignore                      # Specifies intentionally untracked files (e.g., .env, local vector DB, cache)
 └── README.md                       # Project documentation, architecture, workflow & setup instructions
-
+```
 ---
 
 ## 3. Architecture Diagram
@@ -131,7 +133,7 @@ The system is built on a **Shared State Multi-Agent Architecture** powered by **
 | Order | Agent Name | Core Responsibility & Tools |
 | :---: | :--- | :--- |
 | **1** | **Validation Agent** | Acts as the entry guardrail. Enforces Role-Based Access Control (`HR_MANAGER` / `RECRUITER`), validates job title and description completeness, and blocks prompt injection attacks using regex pattern detection. |
-| **2** | **Job Analysis Agent** | Uses **Groq LLM** (`llama-3.3-70b-versatile`) to parse unstructured job descriptions into structured JSON containing `core_skills`, `experience_years`, `role_level`, and a targeted `search_query`. |
+| **2** | **Job Analysis Agent** | Uses **Groq LLM** (`openai/gpt-oss-120b`) to parse unstructured job descriptions into structured JSON containing `core_skills`, `experience_years`, `role_level`, and a targeted `search_query`. |
 | **3** | **Market Research Agent** | Connects to the **Tavily Search API** to retrieve real-time industry skill demands, salary/role trends, and market benchmarks relevant to the analyzed job. |
 | **4** | **Candidate Sourcing Agent** | Queries an authorized **ChromaDB** vector store using semantic similarity search (`HuggingFace all-MiniLM-L6-v2` embeddings) with a strict metadata filter (`authorized == True`) to ensure compliance. |
 | **5** | **CV Parsing Agent** | Applies regex **PII Masking** (`[REDACTED_EMAIL]`, `[REDACTED_PHONE]`) to protect candidate privacy, then uses **Groq LLM** to extract structured skills, years of experience, and education from each CV. |
@@ -145,7 +147,7 @@ The system is built on a **Shared State Multi-Agent Architecture** powered by **
 ## 6. Technologies & AI Tools Used
 
 - **Agent Orchestration:** `LangGraph` & `LangChain`
-- **Large Language Model (LLM):** `Groq` (`llama-3.3-70b-versatile`)
+- **Large Language Model (LLM):** `Groq` (`openai/gpt-oss-120b`)
 - **Web Search Tool:** `Tavily Search API` (`tavily-python`)
 - **Vector Database (RAG):** `ChromaDB` (`chromadb`)
 - **Embedding Model:** `HuggingFace Sentence Transformers` (`all-MiniLM-L6-v2`)
@@ -163,7 +165,7 @@ The system is built on a **Shared State Multi-Agent Architecture** powered by **
 ### Step-by-Step Setup
 1. **Clone the GitHub Repository:**
    ```bash
-   git clone https://github.com/<your-username>/autonomous-hr-recruitment-agent.git
+   git clone https://github.com/lollileeno/autonomous-hr-recruitment-agent.git
    cd autonomous-hr-recruitment-agent
    ```
 
