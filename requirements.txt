@@ -1,0 +1,7 @@
+langchain
+langgraph
+langchain-groq
+langchain-community
+chromadb
+tavily-python
+sentence-transformers
