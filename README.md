@@ -5,7 +5,7 @@
 
 This project done under supervision of SDAIA Academy https://github.com/SDAIAAcademy
 ## Contributors
-Leena Alonayq - Rawan Almutairi - Norah Al-Rumaykhani
+Leena Alonayq @lollileeno - Rawan Almutairi - Norah Al-Rumaykhani
 
 ---
 
@@ -26,7 +26,7 @@ Traditional rule-based scripts or single-prompt LLM chatbots cannot dynamically 
 # 2. Project Structure
 
 ```text
-autonomous-hr-recruitment-agent/
+autonomous-enterprise-HR-recruitment-multi-agent-system/
 │
 ├── recruitment_multi_agent.ipynb   # Main Google Colab notebook containing all 9 agents, LangGraph workflow & test suite
 ├── recruitment_multi_agent.py      # Standalone Python script version for local/server execution
@@ -165,8 +165,8 @@ The system is built on a **Shared State Multi-Agent Architecture** powered by **
 ### Step-by-Step Setup
 1. **Clone the GitHub Repository:**
    ```bash
-   git clone https://github.com/lollileeno/autonomous-hr-recruitment-agent.git
-   cd autonomous-hr-recruitment-agent
+   git clone https://github.com/lollileeno/autonomous-enterprise-HR-recruitment-multi-agent-system.git
+   cd autonomous-enterprise-HR-recruitment-multi-agent-system
    ```
 
 2. **Install Required Dependencies:**
@@ -188,14 +188,14 @@ The system is built on a **Shared State Multi-Agent Architecture** powered by **
 ## 8. How to Run the Project
 
 ### Option A: Google Colab (Recommended)
-1. Upload `recruitment_multi_agent.ipynb` to [Google Colab](https://colab.research.google.com/).
+1. Upload `Autonomous_Enterprise_HR_Recruitment_Multi_Agent_System.ipynb` to [Google Colab](https://colab.research.google.com/).
 2. Ensure `GROQ_API_KEY` and `TAVILY_API_KEY` are enabled in Colab Secrets.
 3. Click **Runtime → Run all** to execute all 9 agents and the automated test suite.
 
 ### Option B: Local Python Execution
 Run the standalone Python script from your terminal:
 ```bash
-python recruitment_multi_agent.py
+python Autonomous_Enterprise_HR_Recruitment_Multi_Agent_System.py
 ```
 
 ### Automated Test Scenarios Included
